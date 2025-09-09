@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="list-group">
+  <a href="{{ url_for('add_student') }}" class="list-group-item list-group-item-action">➕ Add Student</a>
+  <a href="{{ url_for('view_students') }}" class="list-group-item list-group-item-action">👨‍🎓 View Students</a>
+  <a href="{{ url_for('add_course') }}" class="list-group-item list-group-item-action">📘 Add Course</a>
+  <a href="{{ url_for('view_courses') }}" class="list-group-item list-group-item-action">📚 View Courses</a>
+  <a href="{{ url_for('enroll_student') }}" class="list-group-item list-group-item-action">✅ Enroll Student</a>
+  <a href="{{ url_for('select_course') }}" class="list-group-item list-group-item-action">📖 Students in Course</a>
+  <a href="{{ url_for('course_enrollments') }}" class="list-group-item list-group-item-action">📊 Course Enrollments</a>
+  <a href="{{ url_for('students_multiple_courses') }}" class="list-group-item list-group-item-action">👥 Students in Multiple Courses</a>
+  <a href="{{ url_for('search_student') }}" class="list-group-item list-group-item-action">🔍 Search Student</a>
+  <a href="{{ url_for('export_report') }}" class="list-group-item list-group-item-action">💾 Export Report</a>
+</div>
+{% endblock %}
